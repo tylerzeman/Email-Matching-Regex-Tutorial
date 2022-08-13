@@ -40,19 +40,20 @@ let matches = str.match(re);
 console.log(matches);
 This example will return the 1st digit of the multiline string.
 ### Quantifiers
-Quantifiers in this regex use the '+' operator which you will use to connect the user's email info and domain. Another quantifier is the {n,n} you can use this operator to match n or more times.
+Quantifiers in this regex use the '+' operator which you will use to connect the user's email info and domain. Another quantifier is the {n,n} you can use this operator to match n or more times. in the above quantifier on line 3 will allow a match range of 2-6 characters for [a-z\.].
+
+Example:
+let str = 'ECMAScript 2020';
+let re = /\d{4}/;
+let result = str.match(re);
+console.log(result);
+This will output ["2020"] this is the same as /\d\d\d\d/
 ### Grouping Constructs
-
+Capturing groups are a way to treat multiple characters as a single unit. The first grouping in this regex is ([a-z0-9_\.-]+). This matches the user's info. The second grouping in the above regex is ([\da-z\.-]+) which is whatever email platform you wish to use so its watching for a digit 0-9 and the characters a-z. The last grouping is ([a-z\.]{2,6}) to match the 
 ### Bracket Expressions
-
+Bracket expressions for email matching include the characters [a-z0-9_\.-]. What this expression is doing is matching any letter from a-z and matches any number from 0-9, this is case sensitive and will only detect lowercase letters. The [\da-z\.-] is matching a single digit that is 0-9 and the character set a-z that is lowercase. The last bracket is [a-z\.] which is watch for the domain name, such as .net, .com, or .org.
 ### Character Classes
-
-### The OR Operator
-
-### Flags
-
-### Character Escapes
-
+The character class in this regex is \d, which matches a single character digit from [0-9]. It will only pick up single digits and not multiple digits such as '17', '186', '1234515' only '1'.
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
