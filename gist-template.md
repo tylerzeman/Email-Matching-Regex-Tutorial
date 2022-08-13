@@ -37,7 +37,7 @@ let matches = str.match(re);
 console.log(matches);
 This example will return the 1st digit of the multiline string.
 ### Quantifiers
-Quantifiers in this regex use the '+' operator which you will use to connect the user's email info and domain. Another quantifier is the {n,n} you can use this operator to match n or more times. in the above quantifier on line 3 will allow a match range of 2-6 characters for [a-z\.].
+Quantifiers in this regex use the '+' operator which you will use to connect the user's email info and domain. Another quantifier is the {n,n} you can use this operator to match n or more times. in the above quantifier on line 3 will allow a match range of 2-6 characters for [a-z\.]. A few more quantifiers include '*', '+', '?'. The '*' matches zero or more times. The '+' matches one or more times. The '?' matches zero or one time.
 
 Example:
 let str = 'ECMAScript 2020';
