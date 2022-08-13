@@ -55,5 +55,4 @@ Bracket expressions for email matching include the characters [a-z0-9_\.-]. What
 ### Character Classes
 The character class in this regex is \d, which matches a single character digit from [0-9]. It will only pick up single digits and not multiple digits such as '17', '186', '1234515' only '1'.
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Tyler Zeman I am a 23 year old Full Stack developement student taking classes with the UofM's Full Stack Flex Web devlopment for the summer. The bootcamp has opened my eyes to what it takes to build a full-stack app. I have built a few so far and look forward to building many more and adding to my knowledge to making it more robust. If interested here's a link to my github: https://github.com/tylerzeman
